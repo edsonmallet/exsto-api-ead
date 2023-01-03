@@ -1,5 +1,8 @@
 export default ({ env }) => ({
   ckeditor: true,
+  "import-export-entries": {
+    enabled: true,
+  },
   upload: {
     config: {
       provider: "cloudinary",

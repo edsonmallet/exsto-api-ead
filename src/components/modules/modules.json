@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_modules_modules",
+  "info": {
+    "displayName": "modules"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
