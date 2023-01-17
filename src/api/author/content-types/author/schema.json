@@ -4,7 +4,7 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "authors",
+    "displayName": "Authors",
     "description": ""
   },
   "options": {
@@ -44,6 +44,29 @@
       "relation": "manyToMany",
       "target": "api::course-module.course-module",
       "mappedBy": "authors"
+    },
+    "minibio": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

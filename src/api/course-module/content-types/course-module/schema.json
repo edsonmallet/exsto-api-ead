@@ -4,7 +4,8 @@
   "info": {
     "singularName": "course-module",
     "pluralName": "course-modules",
-    "displayName": "courseModules"
+    "displayName": "CourseModules",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

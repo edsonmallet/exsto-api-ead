@@ -4,7 +4,8 @@
   "info": {
     "singularName": "quiz-question",
     "pluralName": "quiz-questions",
-    "displayName": "quizQuestions"
+    "displayName": "QuizQuestions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
