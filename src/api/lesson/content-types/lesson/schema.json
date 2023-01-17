@@ -4,40 +4,53 @@
   "info": {
     "singularName": "lesson",
     "pluralName": "lessons",
-    "displayName": "lessons",
-    "description": ""
+    "displayName": "Lessons"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "uuid": {
-      "type": "customField",
-      "customField": "plugin::field-uuid.uuid"
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "expositive",
+        "tutorial",
+        "activityGuide",
+        "deviceExploration"
+      ]
     },
-    "name": {
-      "type": "string",
-      "required": true
+    "title": {
+      "type": "text"
     },
-    "videoUrl": {
+    "sinopse": {
+      "type": "richtext"
+    },
+    "workload": {
       "type": "string"
     },
-    "course": {
+    "teachers": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::course.course"
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "lessons"
     },
-    "support": {
+    "skillAndCompetence": {
+      "type": "richtext"
+    },
+    "supportMaterial": {
       "type": "component",
       "repeatable": true,
       "component": "modules.support-material"
     },
-    "quizzes": {
+    "course_modules": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::quiz.quiz",
-      "mappedBy": "lessons"
+      "relation": "oneToMany",
+      "target": "api::course-module.course-module",
+      "mappedBy": "lesson"
+    },
+    "urlVideo": {
+      "type": "text"
     }
   }
 }

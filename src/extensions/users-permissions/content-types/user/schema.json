@@ -67,6 +67,64 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::company.company"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lesson.lesson",
+      "mappedBy": "teachers"
+    },
+    "notifications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::notification.notification",
+      "mappedBy": "users_permissions_users"
+    },
+    "certificate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::certificate.certificate",
+      "inversedBy": "users_permissions_users"
+    },
+    "badges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::badge.badge",
+      "mappedBy": "users_permissions_users"
+    },
+    "usernamePublic": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "minibio": {
+      "type": "richtext"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "document": {
+      "type": "string"
+    },
+    "addresses": {
+      "displayName": "userAddress",
+      "type": "component",
+      "repeatable": true,
+      "component": "modules.user-address"
     }
   }
 }

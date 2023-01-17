@@ -34,7 +34,7 @@
       "type": "string",
       "required": true
     },
-    "resume": {
+    "sinopse": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -74,11 +74,6 @@
       },
       "component": "modules.modules"
     },
-    "lessons": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::lesson.lesson"
-    },
     "preview": {
       "type": "component",
       "repeatable": true,
@@ -93,6 +88,89 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::company.company",
+      "mappedBy": "courses"
+    },
+    "coverImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "urlVideoPreview": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "workload": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "targetAudience": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "prerequisites": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "objective": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "visibility": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean"
+    },
+    "scheduling": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "datetime"
+    },
+    "course_module": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course-module.course-module",
+      "inversedBy": "courses"
+    },
+    "notifications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::notification.notification",
       "mappedBy": "courses"
     }
   }

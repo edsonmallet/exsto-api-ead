@@ -38,6 +38,12 @@
       "relation": "manyToMany",
       "target": "api::course.course",
       "mappedBy": "authors"
+    },
+    "course_modules": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course-module.course-module",
+      "mappedBy": "authors"
     }
   }
 }

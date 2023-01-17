@@ -11,20 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "lessons": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::lesson.lesson",
-      "inversedBy": "quizzes"
-    },
     "name": {
       "type": "string"
-    },
-    "questions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::question.question",
-      "mappedBy": "quiz"
     },
     "descriptions": {
       "type": "string"

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_modules",
+  "info": {
+    "singularName": "course-module",
+    "pluralName": "course-modules",
+    "displayName": "courseModules"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "workload": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "inversedBy": "course_modules"
+    },
+    "prerequisites": {
+      "type": "richtext"
+    },
+    "objective": {
+      "type": "richtext"
+    },
+    "challenge": {
+      "type": "boolean"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "course_module"
+    },
+    "urlVideoPreview": {
+      "type": "text"
+    },
+    "scheduling": {
+      "type": "datetime"
+    },
+    "lesson": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lesson.lesson",
+      "inversedBy": "course_modules"
+    }
+  }
+}
