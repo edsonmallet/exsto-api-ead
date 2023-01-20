@@ -64,6 +64,12 @@
       },
       "type": "customField",
       "customField": "plugin::field-uuid.uuid"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "categories"
     }
   }
 }

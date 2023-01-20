@@ -58,11 +58,6 @@
       "targetField": "name",
       "required": true
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
     "modules": {
       "displayName": "modules",
       "type": "component",
@@ -73,16 +68,6 @@
         }
       },
       "component": "modules.modules"
-    },
-    "preview": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "modules.preview-videos"
     },
     "companies": {
       "type": "relation",
@@ -173,6 +158,12 @@
       "relation": "manyToMany",
       "target": "api::notification.notification",
       "mappedBy": "courses"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "course"
     }
   }
 }
