@@ -1,7 +1,8 @@
 {
   "collectionName": "components_modules_modules",
   "info": {
-    "displayName": "modules"
+    "displayName": "modules",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,6 +11,13 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
