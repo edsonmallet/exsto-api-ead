@@ -161,9 +161,20 @@
     },
     "categories": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::category.category",
-      "mappedBy": "course"
+      "mappedBy": "courses"
+    },
+    "showOrder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "min": 1,
+      "default": 1,
+      "required": true
     }
   }
 }

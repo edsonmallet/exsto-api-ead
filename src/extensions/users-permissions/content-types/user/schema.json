@@ -68,12 +68,6 @@
       "relation": "oneToOne",
       "target": "api::company.company"
     },
-    "lessons": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::lesson.lesson",
-      "mappedBy": "teachers"
-    },
     "notifications": {
       "type": "relation",
       "relation": "manyToMany",

@@ -50,6 +50,11 @@
       "relation": "manyToOne",
       "target": "api::lesson.lesson",
       "inversedBy": "course_modules"
+    },
+    "supportMaterial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "modules.support-material"
     }
   }
 }

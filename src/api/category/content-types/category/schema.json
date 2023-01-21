@@ -65,9 +65,9 @@
       "type": "customField",
       "customField": "plugin::field-uuid.uuid"
     },
-    "course": {
+    "courses": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::course.course",
       "inversedBy": "categories"
     }

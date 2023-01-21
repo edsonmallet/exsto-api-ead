@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lesson",
     "pluralName": "lessons",
-    "displayName": "Lessons"
+    "displayName": "Lessons",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,7 +22,7 @@
       ]
     },
     "title": {
-      "type": "text"
+      "type": "string"
     },
     "sinopse": {
       "type": "richtext"
@@ -29,10 +30,10 @@
     "workload": {
       "type": "string"
     },
-    "teachers": {
+    "authors": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
+      "target": "api::author.author",
       "inversedBy": "lessons"
     },
     "skillAndCompetence": {
