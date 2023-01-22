@@ -45,12 +45,6 @@
     "scheduling": {
       "type": "datetime"
     },
-    "lesson": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::lesson.lesson",
-      "inversedBy": "course_modules"
-    },
     "supportMaterial": {
       "type": "component",
       "repeatable": true,
@@ -58,6 +52,12 @@
     },
     "showOrder": {
       "type": "integer"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lesson.lesson",
+      "inversedBy": "course_modules"
     }
   }
 }

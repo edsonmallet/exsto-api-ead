@@ -46,12 +46,16 @@
     },
     "course_modules": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::course-module.course-module",
-      "mappedBy": "lesson"
+      "mappedBy": "lessons"
     },
     "urlVideo": {
       "type": "text"
+    },
+    "showOrder": {
+      "type": "integer",
+      "default": 1
     }
   }
 }
