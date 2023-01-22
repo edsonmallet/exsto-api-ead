@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "text"
+      "type": "string"
     },
     "workload": {
       "type": "string"
@@ -40,7 +40,7 @@
       "mappedBy": "course_module"
     },
     "urlVideoPreview": {
-      "type": "text"
+      "type": "string"
     },
     "scheduling": {
       "type": "datetime"
@@ -55,6 +55,9 @@
       "type": "component",
       "repeatable": true,
       "component": "modules.support-material"
+    },
+    "showOrder": {
+      "type": "integer"
     }
   }
 }
