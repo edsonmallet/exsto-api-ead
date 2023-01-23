@@ -4,7 +4,8 @@
   "info": {
     "singularName": "notification",
     "pluralName": "notifications",
-    "displayName": "Notifications"
+    "displayName": "Notificações",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
