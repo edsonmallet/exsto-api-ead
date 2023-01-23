@@ -175,6 +175,12 @@
       "min": 1,
       "default": 1,
       "required": true
+    },
+    "learning_trails": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::learning-trail.learning-trail",
+      "mappedBy": "courses"
     }
   }
 }

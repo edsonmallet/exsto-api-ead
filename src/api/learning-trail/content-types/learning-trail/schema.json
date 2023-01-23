@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learning_trails",
+  "info": {
+    "singularName": "learning-trail",
+    "pluralName": "learning-trails",
+    "displayName": "LearningTrails"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "inversedBy": "learning_trails"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
