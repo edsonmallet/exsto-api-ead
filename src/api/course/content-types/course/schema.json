@@ -147,9 +147,9 @@
       },
       "type": "datetime"
     },
-    "course_module": {
+    "course_modules": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::course-module.course-module",
       "inversedBy": "courses"
     },

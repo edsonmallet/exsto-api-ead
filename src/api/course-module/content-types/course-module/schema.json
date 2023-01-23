@@ -33,12 +33,6 @@
     "challenge": {
       "type": "boolean"
     },
-    "courses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::course.course",
-      "mappedBy": "course_module"
-    },
     "urlVideoPreview": {
       "type": "string"
     },
@@ -58,6 +52,12 @@
       "relation": "manyToMany",
       "target": "api::lesson.lesson",
       "inversedBy": "course_modules"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "mappedBy": "course_modules"
     }
   }
 }

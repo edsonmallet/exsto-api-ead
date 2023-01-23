@@ -51,7 +51,7 @@
       "mappedBy": "lessons"
     },
     "urlVideo": {
-      "type": "text"
+      "type": "string"
     },
     "showOrder": {
       "type": "integer",
