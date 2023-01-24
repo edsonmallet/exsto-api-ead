@@ -3,6 +3,11 @@ export default ({ env }) => ({
   "import-export-entries": {
     enabled: true,
   },
+  "strapi-plugin-populate-deep": {
+    config: {
+      defaultDepth: 5,
+    },
+  },
   upload: {
     config: {
       provider: "cloudinary",
