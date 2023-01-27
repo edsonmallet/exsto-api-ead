@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_course_pre_requisites",
+  "info": {
+    "displayName": "preRequisites"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}

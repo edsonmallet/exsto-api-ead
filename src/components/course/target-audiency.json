@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_course_target_audiencies",
+  "info": {
+    "displayName": "targetAudiency"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}

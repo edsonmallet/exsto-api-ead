@@ -107,22 +107,6 @@
       },
       "type": "string"
     },
-    "targetAudience": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
-    "prerequisites": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
     "objective": {
       "pluginOptions": {
         "i18n": {
@@ -181,6 +165,26 @@
       "relation": "manyToMany",
       "target": "api::learning-trail.learning-trail",
       "mappedBy": "courses"
+    },
+    "preRequisites": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "course.pre-requisites"
+    },
+    "targetAudiency": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "course.target-audiency"
     }
   }
 }

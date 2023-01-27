@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_forum_answers",
+  "info": {
+    "displayName": "answers"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
