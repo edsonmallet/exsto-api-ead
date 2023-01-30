@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mycourse",
     "pluralName": "mycourses",
-    "displayName": "mycourses"
+    "displayName": "Meus Cursos",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

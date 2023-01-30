@@ -4,7 +4,8 @@
   "info": {
     "singularName": "my-learning-trail",
     "pluralName": "my-learning-trails",
-    "displayName": "MyLearningTrails"
+    "displayName": "Minhas Trilhas ",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,10 +21,10 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "course": {
+    "learning_trail": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::course.course"
+      "target": "api::learning-trail.learning-trail"
     }
   }
 }
