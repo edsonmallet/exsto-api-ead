@@ -68,12 +68,6 @@
       "relation": "oneToOne",
       "target": "api::company.company"
     },
-    "notifications": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::notification.notification",
-      "mappedBy": "users_permissions_users"
-    },
     "certificate": {
       "type": "relation",
       "relation": "manyToOne",
@@ -102,14 +96,15 @@
       "type": "richtext"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "document": {
       "type": "string"
@@ -119,6 +114,19 @@
       "type": "component",
       "repeatable": true,
       "component": "modules.user-address"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "Aluno",
+        "Professor"
+      ]
+    },
+    "notifications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::notification.notification",
+      "mappedBy": "user"
     }
   }
 }

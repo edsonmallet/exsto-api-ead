@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cupoms",
+  "info": {
+    "singularName": "cupom",
+    "pluralName": "cupoms",
+    "displayName": "Cupons",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "cupom": {
+      "type": "string"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "cupom"
+    },
+    "isUsed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

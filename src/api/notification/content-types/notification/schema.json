@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_users": {
+    "user": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
@@ -24,11 +24,11 @@
       "target": "api::course.course",
       "inversedBy": "notifications"
     },
-    "message": {
-      "type": "text"
-    },
     "title": {
       "type": "string"
+    },
+    "message": {
+      "type": "richtext"
     }
   }
 }
