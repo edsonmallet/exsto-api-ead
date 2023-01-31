@@ -185,12 +185,6 @@
         }
       },
       "component": "course.target-audiency"
-    },
-    "cupom": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::cupom.cupom",
-      "inversedBy": "courses"
     }
   }
 }

@@ -21,9 +21,9 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "learning_trail": {
+    "learningTrails": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::learning-trail.learning-trail"
     }
   }

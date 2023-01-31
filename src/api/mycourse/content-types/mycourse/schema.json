@@ -16,9 +16,9 @@
       "type": "customField",
       "customField": "plugin::field-uuid.uuid"
     },
-    "course": {
+    "courses": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::course.course"
     },
     "user": {

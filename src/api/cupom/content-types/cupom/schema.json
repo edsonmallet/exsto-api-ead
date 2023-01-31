@@ -27,13 +27,17 @@
     "courses": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::course.course",
-      "mappedBy": "cupom"
+      "target": "api::course.course"
     },
-    "isUsed": {
+    "status": {
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "learningTrails": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::learning-trail.learning-trail"
     }
   }
 }
