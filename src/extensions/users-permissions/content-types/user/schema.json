@@ -119,7 +119,9 @@
       "type": "enumeration",
       "enum": [
         "Aluno",
-        "Professor"
+        "Professor",
+        "Diretor",
+        "Coordenador"
       ]
     },
     "notifications": {
@@ -127,6 +129,15 @@
       "relation": "manyToMany",
       "target": "api::notification.notification",
       "mappedBy": "user"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "terms": {
+      "type": "boolean"
     }
   }
 }
