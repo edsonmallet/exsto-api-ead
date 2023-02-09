@@ -20,7 +20,7 @@
     "to": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::author.author"
+      "target": "plugin::users-permissions.user"
     },
     "message": {
       "type": "text"
@@ -32,6 +32,11 @@
       "type": "component",
       "repeatable": true,
       "component": "forum.answers"
+    },
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
     }
   }
 }
