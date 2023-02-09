@@ -62,6 +62,11 @@
       "relation": "manyToOne",
       "target": "api::lesson-completed.lesson-completed",
       "inversedBy": "lessons"
+    },
+    "quiz": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::quiz.quiz"
     }
   }
 }

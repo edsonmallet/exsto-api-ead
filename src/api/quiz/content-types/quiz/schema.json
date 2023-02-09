@@ -17,6 +17,12 @@
     },
     "descriptions": {
       "type": "string"
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quiz-question.quiz-question",
+      "mappedBy": "quiz"
     }
   }
 }

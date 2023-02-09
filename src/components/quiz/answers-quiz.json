@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_quiz_answers_quizs",
+  "info": {
+    "displayName": "AnswersQuiz"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "text"
+    },
+    "isCorrect": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

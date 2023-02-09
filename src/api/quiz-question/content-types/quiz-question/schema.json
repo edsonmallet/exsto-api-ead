@@ -22,8 +22,20 @@
     },
     "quiz": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::quiz.quiz"
+      "relation": "manyToOne",
+      "target": "api::quiz.quiz",
+      "inversedBy": "questions"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "muiltiple_choice"
+      ]
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quiz.answers-quiz"
     }
   }
 }
