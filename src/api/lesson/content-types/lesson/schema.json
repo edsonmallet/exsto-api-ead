@@ -57,12 +57,6 @@
       "type": "integer",
       "default": 1
     },
-    "lessons_completed": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::lesson-completed.lesson-completed",
-      "inversedBy": "lessons"
-    },
     "quiz": {
       "type": "relation",
       "relation": "oneToOne",

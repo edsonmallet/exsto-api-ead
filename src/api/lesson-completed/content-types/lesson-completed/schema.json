@@ -22,11 +22,10 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "lessons": {
+    "lesson": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::lesson.lesson",
-      "mappedBy": "lessons_completed"
+      "relation": "oneToOne",
+      "target": "api::lesson.lesson"
     }
   }
 }
