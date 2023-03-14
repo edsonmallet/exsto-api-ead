@@ -1,7 +1,7 @@
 export default ({ env }) => ({
   ckeditor: true,
   "import-export-entries": {
-    enabled: true,
+    enabled: false,
   },
   "strapi-plugin-populate-deep": {
     config: {
