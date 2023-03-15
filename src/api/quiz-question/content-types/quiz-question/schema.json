@@ -36,6 +36,9 @@
       "type": "component",
       "repeatable": true,
       "component": "quiz.answers-quiz"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
