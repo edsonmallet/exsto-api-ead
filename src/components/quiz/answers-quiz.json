@@ -1,7 +1,8 @@
 {
   "collectionName": "components_quiz_answers_quizs",
   "info": {
-    "displayName": "AnswersQuiz"
+    "displayName": "AnswersQuiz",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,17 +10,20 @@
       "type": "text"
     },
     "isCorrect": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false,
+      "required": true
     },
     "description": {
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
