@@ -9,18 +9,17 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@_sh/strapi-plugin-ckeditor": "^1.1.2",
-    "@bn-digital/strapi-plugin-field-uuid": "^1.1.7",
-    "@strapi/plugin-documentation": "^4.8.2",
-    "@strapi/plugin-graphql": "^4.8.2",
-    "@strapi/plugin-i18n": "^4.8.2",
-    "@strapi/plugin-users-permissions": "^4.8.2",
-    "@strapi/provider-upload-cloudinary": "^4.8.2",
-    "@strapi/strapi": "^4.8.2",
-    "pg": "8.6.0",
-    "strapi-plugin-import-export-entries": "^1.18.0",
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@bn-digital/strapi-plugin-field-uuid": "^1.2.12",
+    "@strapi/plugin-documentation": "^4.10.5",
+    "@strapi/plugin-graphql": "^4.10.5",
+    "@strapi/plugin-i18n": "^4.10.5",
+    "@strapi/plugin-users-permissions": "^4.10.5",
+    "@strapi/provider-upload-cloudinary": "^4.10.5",
+    "@strapi/strapi": "^4.10.5",
+    "pg": "^8.11.0",
+    "strapi-plugin-import-export-entries": "^1.19.1",
     "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {
