@@ -33,6 +33,11 @@
     },
     "final_date": {
       "type": "date"
+    },
+    "learning_trails": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::learning-trail.learning-trail"
     }
   }
 }

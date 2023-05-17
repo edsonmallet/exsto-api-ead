@@ -39,6 +39,11 @@
     },
     "title": {
       "type": "string"
+    },
+    "points": {
+      "type": "decimal",
+      "default": 1,
+      "required": true
     }
   }
 }
