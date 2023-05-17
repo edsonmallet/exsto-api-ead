@@ -1,13 +1,9 @@
 export default ({ env }) => ({
-  ckeditor: true,
+  ckeditor: false,
   "import-export-entries": {
     enabled: false,
   },
-  "strapi-plugin-populate-deep": {
-    config: {
-      defaultDepth: 3,
-    },
-  },
+
   upload: {
     config: {
       provider: "cloudinary",

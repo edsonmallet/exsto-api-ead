@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -121,7 +120,8 @@
         "Aluno",
         "Professor",
         "Diretor",
-        "Coordenador"
+        "Coordenador",
+        "Outro"
       ]
     },
     "notifications": {
