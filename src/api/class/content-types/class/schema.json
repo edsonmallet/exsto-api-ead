@@ -4,7 +4,8 @@
   "info": {
     "singularName": "class",
     "pluralName": "classes",
-    "displayName": "classes"
+    "displayName": "Turmas",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
