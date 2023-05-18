@@ -138,6 +138,9 @@
     },
     "terms": {
       "type": "boolean"
+    },
+    "other_position": {
+      "type": "string"
     }
   }
 }

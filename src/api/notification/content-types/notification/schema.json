@@ -29,6 +29,11 @@
     },
     "message": {
       "type": "richtext"
+    },
+    "classes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::class.class"
     }
   }
 }
