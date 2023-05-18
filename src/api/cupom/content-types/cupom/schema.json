@@ -24,20 +24,10 @@
       "relation": "oneToOne",
       "target": "api::company.company"
     },
-    "courses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::course.course"
-    },
     "status": {
       "type": "boolean",
       "default": false,
       "required": true
-    },
-    "learningTrails": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::learning-trail.learning-trail"
     }
   }
 }
